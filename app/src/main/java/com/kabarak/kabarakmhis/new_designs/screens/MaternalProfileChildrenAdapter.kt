@@ -27,8 +27,9 @@ import com.kabarak.kabarakmhis.new_designs.present_pregnancy.PresentPregnancyLis
 import com.kabarak.kabarakmhis.new_designs.previous_pregnancy.PreviousPregnancyList
 import com.kabarak.kabarakmhis.new_designs.tetanus_diptheria.PreventiveServiceList
 import com.kabarak.kabarakmhis.new_designs.weight_monitoring.WeightMonitoringChart
-import com.kabarak.kabarakmhis.pnc.ChildBirthView
 import com.kabarak.kabarakmhis.pnc.ChildViewActivity
+import com.kabarak.kabarakmhis.pnc.aefi.AefiView
+import com.kabarak.kabarakmhis.pnc.post_natal_care_mother.PostNatalCareMotherView
 
 
 class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternalProfileChild>,
@@ -89,7 +90,7 @@ class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternal
                 // Family Planning
                 8.4 -> { context.startActivity(Intent(context, ReferralView::class.java))}
                 // Postnatal Care - Mother
-                8.5 -> { context.startActivity(Intent(context, ReferralView::class.java))}
+                8.5 -> { context.startActivity(Intent(context, PostNatalCareMotherView::class.java))}
                 // Postnatal Care - Baby
                 8.6 -> { context.startActivity(Intent(context, ReferralView::class.java))}
                 // Civil Registration
@@ -100,6 +101,8 @@ class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternal
                 8.9 -> { context.startActivity(Intent(context, ReferralView::class.java))}
                 // Record of Baby Teeth Development
                 8.10 -> { context.startActivity(Intent(context, ReferralView::class.java))}
+                // Immunization > under AEFI
+                8.11 -> {context.startActivity(Intent(context, AefiView::class.java))}
 
 
             }

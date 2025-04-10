@@ -1,0 +1,63 @@
+{
+  "title": "Screener",
+  "status": "active",
+  "version": "0.0.1",
+  "publisher": "Kenneth",
+  "resourceType": "Questionnaire",
+  "subjectType": [
+    "Encounter"
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext",
+      "valueExpression": {
+        "language": "application/x-fhir-query",
+        "expression": "Encounter",
+        "name": "encounter"
+      }
+    }
+  ],
+  "item": [
+    {
+      "type": "date",
+      "linkId": "3451757580964",
+      "text": "DATE",
+      "required": true
+    },
+    {
+      "type": "string",
+      "linkId": "2576040248727",
+      "text": "DESCRIBE:"
+    },
+    {
+      "type": "string",
+      "linkId": "7728761328203",
+      "text": "Antigen/Vaccine:",
+      "required": true
+    },
+    {
+      "type": "string",
+      "linkId": "6328799229708",
+      "text": "Batch Number:",
+      "required": true
+    },
+    {
+      "type": "date",
+      "linkId": "9933583541378",
+      "text": "Manufacture Date:",
+      "required": true
+    },
+    {
+      "type": "date",
+      "linkId": "2962285442872",
+      "text": "Expiry Date:",
+      "required": true
+    },
+    {
+      "type": "string",
+      "linkId": "3122792638943",
+      "text": "Manufacturer's Name:",
+      "required": true
+    }
+  ]
+}

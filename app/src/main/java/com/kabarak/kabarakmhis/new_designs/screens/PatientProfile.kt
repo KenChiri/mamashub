@@ -146,8 +146,9 @@ class PatientProfile : AppCompatActivity() {
         val dbMaternalProfileChild26 = DbMaternalProfileChild(8.8, resources.getDrawable(R.drawable.chm), "Reason for Special Care")
         val dbMaternalProfileChild27 = DbMaternalProfileChild(8.9, resources.getDrawable(R.drawable.chm), "Other Problems as Reported by Parent or Guardian")
         val dbMaternalProfileChild28 = DbMaternalProfileChild(8.10, resources.getDrawable(R.drawable.chm), "Record of Baby Teeth Development")
+        val dbMaternalProfileChild29 = DbMaternalProfileChild(8.11, resources.getDrawable(R.drawable.chm), "Immunization AEFI")
 
-        dbMaternalPncVisitList.addAll(listOf(dbMaternalProfileChild19, dbMaternalProfileChild20, dbMaternalProfileChild21, dbMaternalProfileChild22, dbMaternalProfileChild23, dbMaternalProfileChild24, dbMaternalProfileChild25, dbMaternalProfileChild26, dbMaternalProfileChild27, dbMaternalProfileChild28))
+        dbMaternalPncVisitList.addAll(listOf(dbMaternalProfileChild19, dbMaternalProfileChild20, dbMaternalProfileChild21, dbMaternalProfileChild22, dbMaternalProfileChild23, dbMaternalProfileChild24, dbMaternalProfileChild25, dbMaternalProfileChild26, dbMaternalProfileChild27, dbMaternalProfileChild28, dbMaternalProfileChild29))
 
 
         val dbMaternalProfile = DbMaternalProfile("Client Information", dbMaternalClientInfoList, true)
