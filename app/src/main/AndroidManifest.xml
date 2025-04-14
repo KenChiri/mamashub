@@ -19,10 +19,31 @@
         android:windowSoftInputMode="adjustPan"
         tools:replace="android:allowBackup">
         <activity
-            android:name=".pnc.ChildViewActivity"
+            android:name=".pnc.aefi.AefiAdapter"
             android:exported="false" />
         <activity
-            android:name=".pnc.ChildView"
+            android:name=".pnc.aefi.AefiEdit"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.aefi.AefiView"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.aefi.Aefi"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.post_natal_care_mother.PostNatalCareMotherAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.post_natal_care_mother.PostNatalCareMotherEdit"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.post_natal_care_mother.PostNatalCareMotherView"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.post_natal_care_mother.PostNatalCareMother"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.ChildViewActivity"
             android:exported="false" />
         <activity
             android:name=".pnc.ChildEdit"
